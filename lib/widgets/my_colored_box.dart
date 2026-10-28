@@ -1,23 +1,23 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
-class MyColoredBox extends StatelessWidget {
-  const MyColoredBox({
-    super.key,
-    this.width = 100,
-    this.height = 100,
-    this.color = const Color.fromARGB(235, 255, 251, 251),
-  });
-
-  final double width;
-  final double height;
-  final Color color;
+class CabeceraPortfolio extends StatelessWidget {
+  const CabeceraPortfolio({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width,
-      height: height,
-      decoration: BoxDecoration(color: color),
+      width: double.infinity,
+      color: Colors.red,
+      padding: const EdgeInsets.all(12),
+      child: const Text(
+        'Este es mi portfolio',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 20,
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
     );
   }
 }
